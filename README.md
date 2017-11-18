@@ -1,4 +1,4 @@
-#Coupon-System
+<h1>Coupon System</h1>
 
 A system that enables companies to offer coupons and customers to purchase them.
 
