@@ -3,8 +3,8 @@ package org.miri.client.controllers;
 import java.util.List;
 
 import org.miri.api.GuestService;
-import org.miri.beans.Coupon;
-import org.miri.beans.clients.Company;
+import org.miri.core.beans.Coupon;
+import org.miri.core.beans.clients.Company;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.web.bind.annotation.GetMapping;

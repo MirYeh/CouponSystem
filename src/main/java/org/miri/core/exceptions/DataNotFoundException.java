@@ -1,4 +1,4 @@
-package org.miri.exceptions;
+package org.miri.core.exceptions;
 
 /**
  * RuntimeException thrown when requested data is not found.

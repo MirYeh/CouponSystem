@@ -4,8 +4,8 @@ import java.net.URI;
 import java.util.List;
 
 import org.miri.api.CompanyService;
-import org.miri.beans.Coupon;
-import org.miri.beans.clients.Company;
+import org.miri.core.beans.Coupon;
+import org.miri.core.beans.clients.Company;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.http.ResponseEntity;

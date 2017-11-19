@@ -1,4 +1,4 @@
-package org.miri.exceptions;
+package org.miri.core.exceptions;
 
 /**
  * Predefined messages to use when throwing an exception.

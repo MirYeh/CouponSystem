@@ -1,15 +1,15 @@
-package org.miri.services;
+package org.miri.core.services;
 
 import java.sql.Date;
 import java.util.List;
 
 import org.miri.api.CompanyService;
 import org.miri.api.repositories.CompanyRepository;
-import org.miri.beans.Coupon;
-import org.miri.beans.clients.Company;
-import org.miri.exceptions.*;
-import org.miri.services.util.TypeHandler;
-import org.miri.services.util.Validations;
+import org.miri.core.beans.Coupon;
+import org.miri.core.beans.clients.Company;
+import org.miri.core.exceptions.*;
+import org.miri.core.util.TypeHandler;
+import org.miri.core.util.Validations;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

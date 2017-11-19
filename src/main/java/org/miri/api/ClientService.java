@@ -2,8 +2,8 @@ package org.miri.api;
 
 import java.util.List;
 
-import org.miri.beans.Coupon;
-import org.miri.beans.clients.Client;
+import org.miri.core.beans.Coupon;
+import org.miri.core.beans.clients.Client;
 
 /**
  * Defines methods that allow clients to access the system.

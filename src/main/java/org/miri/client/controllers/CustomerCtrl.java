@@ -4,9 +4,9 @@ import java.net.URI;
 import java.util.List;
 
 import org.miri.api.CustomerService;
-import org.miri.beans.Coupon;
-import org.miri.beans.CustomerCoupon;
-import org.miri.beans.clients.Customer;
+import org.miri.core.beans.Coupon;
+import org.miri.core.beans.CustomerCoupon;
+import org.miri.core.beans.clients.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.http.ResponseEntity;
@@ -79,12 +79,12 @@ public class CustomerCtrl {
 	}
 	
 	
-	@GetMapping("/coupon/all")
+	@GetMapping("/coupons")
 	public @ResponseBody List<Coupon> getCoupons() {
 		return service.getCoupons();
 	}
 	
-	@PostMapping("/coupon")
+	@PostMapping("/coupons")
 	public @ResponseBody ResponseEntity<Void> purchaseCoupon(
 			@RequestBody CustomerCoupon customerCoupon) {
 		customerCoupon = service.purchaseCoupon(
@@ -95,8 +95,9 @@ public class CustomerCtrl {
 				.build();
 	}
 	
-	@GetMapping("/coupon/{purchaseId}")
-	public @ResponseBody ResponseEntity<CustomerCoupon> getPurchase(@PathVariable("purchaseId") long purchaseId) {
+	@GetMapping("/coupons/{purchaseId}")
+	public @ResponseBody ResponseEntity<CustomerCoupon> getPurchase(
+			@PathVariable("purchaseId") long purchaseId) {
 		CustomerCoupon purchase = service.getPurchase(purchaseId);
 		return ResponseEntity
 				.ok()

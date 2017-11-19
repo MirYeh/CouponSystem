@@ -3,7 +3,7 @@ package org.miri;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
-import org.miri.system.DailyCouponTask;
+import org.miri.core.system.DailyCouponTask;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

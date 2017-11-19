@@ -1,4 +1,4 @@
-package org.miri.beans.clients;
+package org.miri.core.beans.clients;
 
 import java.sql.Date;
 

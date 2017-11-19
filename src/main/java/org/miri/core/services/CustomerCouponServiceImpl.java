@@ -1,16 +1,16 @@
-package org.miri.services;
+package org.miri.core.services;
 
 import java.util.List;
 
 import org.miri.api.CustomerCouponService;
 import org.miri.api.repositories.CouponRepository;
 import org.miri.api.repositories.CustomerCouponRepository;
-import org.miri.beans.Coupon;
-import org.miri.beans.CustomerCoupon;
-import org.miri.beans.clients.Customer;
-import org.miri.exceptions.UserInputException;
-import org.miri.exceptions.UserMessages;
-import org.miri.services.util.Validations;
+import org.miri.core.beans.Coupon;
+import org.miri.core.beans.CustomerCoupon;
+import org.miri.core.beans.clients.Customer;
+import org.miri.core.exceptions.UserInputException;
+import org.miri.core.exceptions.UserMessages;
+import org.miri.core.util.Validations;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,11 +1,11 @@
-package org.miri.system;
+package org.miri.core.system;
 
 import java.util.List;
 
 import javax.annotation.PreDestroy;
 
 import org.miri.api.repositories.CouponRepository;
-import org.miri.beans.Coupon;
+import org.miri.core.beans.Coupon;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;

@@ -1,8 +1,8 @@
 package org.miri.api;
 
-import org.miri.beans.Coupon;
-import org.miri.beans.CustomerCoupon;
-import org.miri.beans.clients.Customer;
+import org.miri.core.beans.Coupon;
+import org.miri.core.beans.CustomerCoupon;
+import org.miri.core.beans.clients.Customer;
 
 /**
  * Defines methods for a registered customer to interact with the system.

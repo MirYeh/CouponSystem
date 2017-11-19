@@ -1,4 +1,4 @@
-package org.miri.beans;
+package org.miri.core.beans;
 
 import java.io.Serializable;
 import java.sql.Date;
@@ -14,7 +14,7 @@ import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 
-import org.miri.beans.clients.Company;
+import org.miri.core.beans.clients.Company;
 
 
 /**

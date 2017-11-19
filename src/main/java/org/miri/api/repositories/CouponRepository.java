@@ -3,7 +3,7 @@ package org.miri.api.repositories;
 import java.sql.Date;
 import java.util.List;
 
-import org.miri.beans.Coupon;
+import org.miri.core.beans.Coupon;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

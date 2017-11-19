@@ -2,8 +2,8 @@ package org.miri.client.mappers;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.miri.exceptions.CompanyRemovalException;
-import org.miri.exceptions.UserInputException;
+import org.miri.core.exceptions.CompanyRemovalException;
+import org.miri.core.exceptions.UserInputException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;

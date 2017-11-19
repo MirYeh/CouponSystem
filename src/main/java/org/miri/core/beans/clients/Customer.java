@@ -1,4 +1,4 @@
-package org.miri.beans.clients;
+package org.miri.core.beans.clients;
 
 import java.io.Serializable;
 import java.sql.Date;
@@ -13,46 +13,42 @@ import javax.persistence.Id;
 import org.springframework.stereotype.Component;
 
 /**
- * Represents a Company entity in the database.
+ * Represents a Customer entity in the database.
  * @author Miri Yehezkel
  * @see Client
  */
 @Entity @Component
-public class Company extends Client implements Serializable {
-	private static final long serialVersionUID = -3916313550659930832L;
+public class Customer extends Client implements Serializable {
+	private static final long serialVersionUID = -1023373016696394491L;
+	
+	private String personalName;
 	
 	/** No-args constructor */
-	public Company() {
+	public Customer() {
 		super();
 	}
 	
 	/**
-	 * Allows to construct a Company entity with user name and password.
-	 * @param username Company's user name
-	 * @param password Company's password
+	 * Allows to construct a Customer entity with user name and password.
+	 * @param username Customer's user name
+	 * @param password Customer's password
 	 */
-	public Company(String username, String password) {
+	public Customer(String username, String password) {
 		super(username, password);
 	}
 	
 	/**
-	 * Allows to construct a Company entity with user name, password and email.
-	 * @param username Company's user name
-	 * @param password Company's password
-	 * @param email Company's email address
+	 * Allows to construct a Customer entity with user name, password and email.
+	 * @param username Customer's user name
+	 * @param password Customer's password
+	 * @param email Customer's email address
+	 * @param personalName Customer's personal name
 	 */
-	public Company(String username, String password, String email) {
+	public Customer(String username, String password, String email, String personalName) {
 		super(username, password, email);
+		this.personalName = personalName;
 	}
-	
-	/**
-	 * Generates a hash code for a company.
-	 */
-	@Override
-	public int hashCode() {
-		return Objects.hash(id, username);
-	}
-	
+
 	@Id @GeneratedValue(strategy=GenerationType.AUTO)
 	public long getId() { return id; }
 	public void setId(long id) { this.id = id; }
@@ -75,6 +71,17 @@ public class Company extends Client implements Serializable {
 			this.joined = joined;
 	}
 	
+	public String getPersonalName() { return personalName; }
+	public void setPersonalName(String personalName) { this.personalName = personalName; }
+	
+	/**
+	 * Generates a hash code for a customer.
+	 */
+	@Override
+	public int hashCode() {
+		return Objects.hash(id, username);
+	}
+	
 	/**
 	 * Checks if objects are equal. 
 	 */
@@ -82,11 +89,9 @@ public class Company extends Client implements Serializable {
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
-		if (obj != null && obj instanceof Company)
-			return (this.id == ((Company)obj).id);
+		if (obj != null && obj instanceof Customer)
+			return (this.id == ((Customer)obj).id);
 		return false;
 	}
-	
-	
 	
 }

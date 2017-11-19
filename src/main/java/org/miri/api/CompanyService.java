@@ -1,7 +1,7 @@
 package org.miri.api;
 
-import org.miri.beans.Coupon;
-import org.miri.beans.clients.Company;
+import org.miri.core.beans.Coupon;
+import org.miri.core.beans.clients.Company;
 
 /**
  * Defines methods for a registered company to interact with the system.

@@ -1,4 +1,4 @@
-package org.miri.exceptions;
+package org.miri.core.exceptions;
 
 /**
  * RuntimeException thrown when a Company delete operation on coupons or self can't be executed.

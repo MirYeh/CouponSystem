@@ -1,4 +1,4 @@
-package org.miri.exceptions;
+package org.miri.core.exceptions;
 
 /**
  * RuntimeException thrown when a given input is not valid and should be changed by the user.

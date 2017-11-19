@@ -2,9 +2,9 @@ package org.miri.api.repositories;
 
 import java.util.List;
 
-import org.miri.beans.Coupon;
-import org.miri.beans.CustomerCoupon;
-import org.miri.beans.clients.Customer;
+import org.miri.core.beans.Coupon;
+import org.miri.core.beans.CustomerCoupon;
+import org.miri.core.beans.clients.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

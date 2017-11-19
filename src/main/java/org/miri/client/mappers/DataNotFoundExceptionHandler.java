@@ -2,7 +2,7 @@ package org.miri.client.mappers;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.miri.exceptions.DataNotFoundException;
+import org.miri.core.exceptions.DataNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;

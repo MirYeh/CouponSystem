@@ -1,4 +1,4 @@
-package org.miri.beans;
+package org.miri.core.beans;
 
 import java.io.Serializable;
 import java.util.Objects;

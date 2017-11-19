@@ -2,7 +2,7 @@ package org.miri.api.repositories;
 
 import java.util.List;
 
-import org.miri.beans.clients.Company;
+import org.miri.core.beans.clients.Company;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

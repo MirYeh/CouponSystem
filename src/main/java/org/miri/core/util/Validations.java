@@ -1,11 +1,11 @@
-package org.miri.services.util;
+package org.miri.core.util;
 
 import java.util.List;
 
-import org.miri.beans.clients.Client;
-import org.miri.exceptions.DataNotFoundException;
-import org.miri.exceptions.UserInputException;
-import org.miri.exceptions.UserMessages;
+import org.miri.core.beans.clients.Client;
+import org.miri.core.exceptions.DataNotFoundException;
+import org.miri.core.exceptions.UserInputException;
+import org.miri.core.exceptions.UserMessages;
 
 /**
  * Groups validation and verification methods that are used by more than one service.<br>

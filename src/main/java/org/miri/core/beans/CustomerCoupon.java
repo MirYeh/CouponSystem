@@ -1,4 +1,4 @@
-package org.miri.beans;
+package org.miri.core.beans;
 
 import java.io.Serializable;
 import java.sql.Date;
@@ -12,7 +12,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
-import org.miri.beans.clients.Customer;
+import org.miri.core.beans.clients.Customer;
 import org.springframework.stereotype.Component;
 
 @Entity @Component

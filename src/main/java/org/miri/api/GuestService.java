@@ -2,7 +2,7 @@ package org.miri.api;
 
 import java.util.List;
 
-import org.miri.beans.clients.Company;
+import org.miri.core.beans.clients.Company;
 
 /**
  * Defines methods available for clients and guests.

@@ -1,8 +1,8 @@
-package org.miri.services.util;
+package org.miri.core.util;
 
 import org.miri.api.repositories.TypeRepository;
-import org.miri.beans.Coupon;
-import org.miri.beans.Type;
+import org.miri.core.beans.Coupon;
+import org.miri.core.beans.Type;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

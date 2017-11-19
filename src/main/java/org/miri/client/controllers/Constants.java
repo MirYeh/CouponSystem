@@ -3,7 +3,7 @@ package org.miri.client.controllers;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-import org.miri.beans.Coupon;
+import org.miri.core.beans.Coupon;
 
 public class Constants {
 	private static String COUPON_INSTANCE_PATH = "/coupon/";
