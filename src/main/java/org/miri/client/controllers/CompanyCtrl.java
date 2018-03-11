@@ -37,6 +37,7 @@ public class CompanyCtrl {
 	
 	@PostMapping("/register")
 	public @ResponseBody ResponseEntity<Void> register(@RequestBody Company company) {
+		System.out.println("in register method");
 		company = service.register(company);
 		return ResponseEntity
 				.created(buildClientUri(company))
