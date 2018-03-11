@@ -76,7 +76,9 @@ Send POST request to _/cp/register_ with body:
 }
 ```
 Expected response:
+
 status: 201 Created
+
 Location: _/cp/{id}_
 
 
@@ -96,8 +98,11 @@ Send POST request to _/cp/coupons_ with body:
 }
 ```
 Expected response:
+
 status: 201 Created
+
 Location: _/coupon/{id}_
+
 
 
 ### Search Coupons
@@ -144,7 +149,9 @@ Send POST  request to _/u/coupons_ with body:
 }
 ```
 Expected response:
+
 Status: 200 OK
+
 Location: /coupon/{id}
 
 
